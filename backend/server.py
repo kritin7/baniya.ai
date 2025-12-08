@@ -76,7 +76,7 @@ class SalePrediction(BaseModel):
     categories: List[str]
     confidence: str
 
-class ShaadiF und(BaseModel):
+class ShaadiFund(BaseModel):
     model_config = ConfigDict(extra="ignore")
     total_saved: float
     transactions: int
