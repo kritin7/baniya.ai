@@ -159,9 +159,9 @@ export default function HomePage() {
               </div>
               <div className="text-right">
                 <div className="text-4xl font-heading font-bold text-primary" data-testid="shaadi-fund-amount">
-                  ₹{shaadiF und.total_saved.toLocaleString('en-IN')}
+                  ₹{shaadiFund.total_saved.toLocaleString('en-IN')}
                 </div>
-                <div className="text-sm text-muted-foreground font-mono">{shaadiF und.transactions} transactions</div>
+                <div className="text-sm text-muted-foreground font-mono">{shaadiFund.transactions} transactions</div>
               </div>
             </div>
             
