@@ -285,19 +285,19 @@ async def get_sales_predictions(platform: Optional[str] = None):
     
     return predictions
 
-@api_router.get("/shaadi-fund", response_model=ShaadiF und)
+@api_router.get("/shaadi-fund", response_model=ShaadiFund)
 async def get_shaadi_fund():
     # In real app, this would be tracked per user
     fund_data = await db.shaadi_fund.find_one({"user": "demo"}, {"_id": 0})
     
     if not fund_data:
-        return ShaadiF und(
+        return ShaadiFund(
             total_saved=0.0,
             transactions=0,
             last_updated=datetime.now(timezone.utc).isoformat()
         )
     
-    return ShaadiF und(**fund_data)
+    return ShaadiFund(**fund_data)
 
 @api_router.post("/shaadi-fund/add")
 async def add_to_shaadi_fund(amount: float):
