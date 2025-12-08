@@ -8,7 +8,7 @@ const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 export default function HomePage() {
-  const [shaadiF und, setShaadiFund] = useState({ total_saved: 0, transactions: 0 });
+  const [shaadiFund, setShaadiFund] = useState({ total_saved: 0, transactions: 0 });
 
   useEffect(() => {
     fetchShaadiFund();
