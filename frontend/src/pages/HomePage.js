@@ -54,7 +54,7 @@ export default function HomePage() {
   ];
 
   const fundGoal = 500000;
-  const fundProgress = (shaadiF und.total_saved / fundGoal) * 100;
+  const fundProgress = (shaadiFund.total_saved / fundGoal) * 100;
 
   return (
     <div className="min-h-screen" data-testid="home-page">
